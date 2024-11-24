@@ -95,10 +95,10 @@ Here is the corresponding code:\\ \\
 The final constraint is too eliminate sub tours. I used the same idea with the variable t as used in class.
 \begin{align*}
 &\text{For all } 2 \leq i, j \leq n \text{, and i does not equal j:} \\
-&\hspace{1.5cm}t_i - t_j + (n-1)w_{i,j} <= n-2 \\
-&\hspace{1.5cm}t_i - t_j + (n-1)x_{i,j} <= n-2 \\
-&\hspace{1.5cm}t_i - t_j + (n-1)y_{i,j} <= n-2 \\
-&\hspace{1.5cm}t_i - t_j + (n-1)z_{i,j} <= n-2 \\
+&\hspace{1.5cm}t_i - t_j + (n-1)w_{i,j} \leq n-2 \\
+&\hspace{1.5cm}t_i - t_j + (n-1)x_{i,j} \leq n-2 \\
+&\hspace{1.5cm}t_i - t_j + (n-1)y_{i,j} \leq n-2 \\
+&\hspace{1.5cm}t_i - t_j + (n-1)z_{i,j} \leq n-2 \\
 \end{align*}
 The corresponding code: \\ \\
 \includegraphics[scale = .5]{images/constraints6.png} \\
@@ -114,13 +114,13 @@ Here is the code for it: \\ \\
 After running the code, we got an optimal value of 14997.0 miles. \\
 The flight paths of the 4 planes are as follows: \\ \\
 Plane w (plane 1): \\
-LAX -> BOS -> JFK -> MCO -> ATL -> LAX \\ \\
+LAX -$>$ BOS -$>$ JFK -$>$ MCO -$>$ ATL -$>$ LAX \\ \\
 Plane x (plane 2): \\
-LAX -> MSP -> DTW -> ORD -> LAX \\ \\
+LAX -$>$ MSP -$>$ DTW -$>$ ORD -$>$ LAX \\ \\
 Plane y (plane 3): \\
-LAX -> DEN -> DFW -> PHX -> LAX \\ \\
+LAX -$>$ DEN -$>$ DFW -$>$ PHX -$>$ LAX \\ \\
 Plane z (plane 4): \\
-LAX -> SFO -> SEA -> LAS -> LAX \\ \\
+LAX -$>$ SFO -$>$ SEA -$>$ LAS -$>$ LAX \\ \\
 
 Additionally, here is the objective value, objective matrices, and paths as outputted by the code: \\ \\
 \includegraphics[scale = 0.5]{images/output.png} \\
