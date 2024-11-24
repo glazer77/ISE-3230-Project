@@ -50,14 +50,6 @@ for i in range(n):
     constraints.append(cp.sum(y[:, i]) == cp.sum(y[i, :]))
     constraints.append(cp.sum(z[:, i]) == cp.sum(z[i, :]))
 
-for i in range(1, n):
-    for j in range(1, n):
-        if i != j:
-            constraints.append(t[i] - t[j] + (n - 1) * w[i, j] <= n - 2)
-            constraints.append(t[i] - t[j] + (n - 1) * x[i, j] <= n - 2)
-            constraints.append(t[i] - t[j] + (n - 1) * y[i, j] <= n - 2)
-            constraints.append(t[i] - t[j] + (n - 1) * z[i, j] <= n - 2)
-
 constraints.append(cp.sum(w)<=5)
 constraints.append(cp.sum(w)>=4)
 constraints.append(cp.sum(x)<=5)
@@ -70,6 +62,15 @@ constraints.append(cp.sum(w[0,:]) == 1)
 constraints.append(cp.sum(x[0,:]) == 1)
 constraints.append(cp.sum(y[0,:]) == 1)
 constraints.append(cp.sum(z[0,:]) == 1)
+
+for i in range(1, n):
+    for j in range(1, n):
+        if i != j:
+            constraints.append(t[i] - t[j] + (n - 1) * w[i, j] <= n - 2)
+            constraints.append(t[i] - t[j] + (n - 1) * x[i, j] <= n - 2)
+            constraints.append(t[i] - t[j] + (n - 1) * y[i, j] <= n - 2)
+            constraints.append(t[i] - t[j] + (n - 1) * z[i, j] <= n - 2)
+
 
 problem = cp.Problem(cp.Minimize(obj_func), constraints)
 problem.solve(solver=cp.GUROBI)
