@@ -1,25 +1,6 @@
 import cvxpy as cp
 import numpy as np
 
-def findPath(x):
-    airports = ['LAX', 'ATL', 'SFO', 'JFK', 'DEN', 'DFW', 'ORD', 'DTW', 'MCO', 'LAS', 'SEA', 'PHX', 'MSP', 'BOS']
-    airport = 0
-    str = airports[airport]
-    for i in range(len(x[airport])):
-        if i == 1:
-            airport = i
-            break
-    while airport != 0:
-        str = " -> " + airports[airport]
-        if airport == 0:
-            break
-        for i in range(len(x[airport])):
-            if i == 1:
-                airport = i
-                break
-    return str
-
-
 distances = np.array([
     [0, 1946, 337, 2475, 862, 1231, 1745, 1979, 2214, 236, 954, 370, 1533, 2611],
     [1946, 0, 2139, 760, 1199, 732, 606, 594, 403, 1747, 2182, 1587, 906, 946],
@@ -103,11 +84,3 @@ print("y =")
 print(y.value)
 print("z =")
 print(z.value)
-print("Path of Plane 1:")
-print(findPath(w.value))
-print("Path of Plane 2:")
-print(findPath(x.value))
-print("Path of Plane 3:")
-print(findPath(y.value))
-print("Path of Plane 4:")
-print(findPath(z.value))
