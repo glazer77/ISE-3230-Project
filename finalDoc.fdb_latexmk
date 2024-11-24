@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1732488447 "/Users/carterglazer/Downloads/ISE-3230-Project/finalDoc.tex" "finalDoc.pdf" "finalDoc" 1732488448 0
-  "/Users/carterglazer/Downloads/ISE-3230-Project/finalDoc.tex" 1732488446 6672 d760e6d89e3415d2126b469f7ffab060 ""
+["pdflatex"] 1732488643 "/Users/carterglazer/Downloads/ISE-3230-Project/finalDoc.tex" "finalDoc.pdf" "finalDoc" 1732488644 0
+  "/Users/carterglazer/Downloads/ISE-3230-Project/finalDoc.tex" 1732488492 6673 4b7cd8fe4cfb8c16bd9014c8d5b49871 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -102,9 +102,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693265850 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693265787 7883452 af609c66bf73b807f8b9d1c84b5bae4a ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "finalDoc.aux" 1732488448 554 dcb6cdbfea97bc174edd759ac80b202c "pdflatex"
-  "finalDoc.out" 1732488447 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "finalDoc.tex" 1732488446 6672 d760e6d89e3415d2126b469f7ffab060 ""
+  "finalDoc.aux" 1732488644 554 dcb6cdbfea97bc174edd759ac80b202c "pdflatex"
+  "finalDoc.out" 1732488644 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "finalDoc.tex" 1732488492 6673 4b7cd8fe4cfb8c16bd9014c8d5b49871 ""
   "images/ObjFunc.png" 1732485912 50258 33a751144646440a93558a8f5c33ff9a ""
   "images/OptVars.png" 1732485912 267889 74aa69ea8aaf1b61ef51f03d1ec998aa ""
   "images/constraints1.png" 1732485912 51362 778dabf0e5b29cd1a8cc6ff3c44aea0c ""
