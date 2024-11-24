@@ -1,6 +1,23 @@
 import cvxpy as cp
 import numpy as np
 
+def findPath(x):
+    airport = 0
+    airports = ['LAX', 'ATL', 'SFO', 'JFK', 'DEN', 'DFW', 'ORD', 'DTW', 'MCO', 'LAS', 'SEA', 'PHX', 'MSP', 'BOS']
+    str = airports[airport]
+    for i in range(len(x[airport])):
+        if x[airport, i] == 1:
+            airport = i
+            str = str + " -> " + airports[airport]
+            break
+    while airport != 0:
+        for i in range(len(x[airport])):
+            if x[airport, i] == 1:
+                airport = i
+                str = str + " -> " + airports[airport]
+                break
+    return(str)
+
 distances = np.array([
     [0, 1946, 337, 2475, 862, 1231, 1745, 1979, 2214, 236, 954, 370, 1533, 2611],
     [1946, 0, 2139, 760, 1199, 732, 606, 594, 403, 1747, 2182, 1587, 906, 946],
@@ -58,6 +75,7 @@ constraints.append(cp.sum(y)<=5)
 constraints.append(cp.sum(y)>=4)
 constraints.append(cp.sum(z)<=5)
 constraints.append(cp.sum(z)>=4)
+
 constraints.append(cp.sum(w[0,:]) == 1)
 constraints.append(cp.sum(x[0,:]) == 1)
 constraints.append(cp.sum(y[0,:]) == 1)
@@ -85,3 +103,11 @@ print("y =")
 print(y.value)
 print("z =")
 print(z.value)
+print("path of plane 1:")
+print(findPath(w.value))
+print("path of plane 2:")
+print(findPath(x.value))
+print("path of plane 3:")
+print(findPath(y.value))
+print("path of plane 4:")
+print(findPath(z.value))
