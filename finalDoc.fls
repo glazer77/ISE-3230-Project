@@ -724,6 +724,9 @@ INPUT ./images/output.png
 INPUT images/output.png
 INPUT ./images/output.png
 INPUT ./images/output.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT finalDoc.aux
 INPUT ./finalDoc.out
 INPUT ./finalDoc.out
