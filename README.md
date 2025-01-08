@@ -5,4 +5,4 @@ The latex code is in finalDoc.tex. <br>
 The final document as a pdf is in finalDoc.pdf. <br>
 The images folder are images of the code and output used in the latex. <br>
 The powerpoint file is our presentation. <br>
-The other files were crreated when the latex was run on vscode. <br>
+The other files were crreated when the latex was run on vs code. <br>
